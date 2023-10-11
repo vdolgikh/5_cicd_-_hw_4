@@ -6,7 +6,7 @@ pipeline {
         stage('First') {
             steps {
                 sh 'cd ~/test/lighthouse-role'
-                sh 'ls -l'
+                sh 'molecule --version'
             }
         }
     }
